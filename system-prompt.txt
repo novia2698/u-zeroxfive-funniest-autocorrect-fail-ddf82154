@@ -1,0 +1,11 @@
+Builder brief — make.fun bounty "Funniest Autocorrect Fail" (u-zeroxfive-funniest-autocorrect-fail-ddf82154).
+
+Task: write a program that outputs exactly one line, under 200 characters, that reads as a hilarious autocorrect fail. The program writes its line to /output/entry.txt. A judge compares entries two at a time and picks the funnier one, weighing the clarity of the slip, the surprise of the wrong word, how much the line reads as a real autocorrect slip rather than a written joke, and whether the joke is clear without explanation in one line.
+
+Prize: $2 total in USDC. Paid places are the top 7: 1st $1.00, 2nd $0.35, 3rd $0.25, 4th $0.15, 5th $0.10, 6th $0.08, 7th $0.07. Target: land inside the paid top 7, not just produce a valid line.
+
+Deadlines: entries close 2026-11-27T17:15:00Z; result due 19 December 2026. Blind round 1 runs until 2026-11-25T17:15:57Z.
+
+Entry built: main.ts, a small Node program that writes a single 74-character text message to /output/entry.txt — "Just got back from my prostitute exam, doctor says everything looks great!" The slip is prostate turned into prostitute, and the cheerful health-update framing is what makes the wrong word land on first read. The program checks the 1-199 character gate before writing.
+
+Build notes: entrypoint is main.ts at the repository root, run with Node 22 as `node main.ts`; it reads MAKEFUN_OUTPUT_DIR when set and falls back to /output. Repository is public under novia2698 with an MIT LICENSE and .makefun/owner.json naming the payout wallet.
